@@ -1,44 +1,129 @@
+*{ /*reset do css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-image:url('https://s1.1zoom.me/b8579/585/Maldives_Tropics_Sea_Sky_Bungalow_539484_1366x768.jpg');
-    background-size: auto auto;
-    font-family: Arial;
+    /*background-size: auto auto; */
+    /* backdrop-filter: blur(5px) */
+    font-family: 'Source Code Pro', monospace;
     height: 100vh;
-    width: 100wh;
+    font-size: 12px ;
 }
-  
+/*se a tela tiver pelo menos 400px vai carregar esses estilos*/
+@media (min-width: 400px) {
+    body{
+        font-size: 14px;
+    }
+    .menu li{
+        font-size: 14px;
+ }
+
+}
+
+@media (min-width: 600px) {
+        body{
+            font-size: 18px;
+        }
+        .menu li{
+               font-size: 18px;
+        }
+
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .menu
   {
   background-color: #ffffff; /*branco*/
-  }
+  position: fixed;
+  width: 100vw;
+  top:0;
+}
+
   .menu ul {
     display: flex;
     justify-content: space-around;
   }
+
   .menu li{
-    list-style: true;
-    font-size: 20px;
+    list-style: none;
+    
   }
+
   a{
     color: black;
    text-decoration: none;
   }
   
+  .menu a{
+    
+      padding: 10px 20px;
+      display: block;
+  }
+
   a:hover {
-    text-decoration: unterline;
+    text-decoration: underline;
   }
   
   .site-subtitle,
   .site-title{
-    color: white;
     text-align: center;
+    margin: 20px;
   }
-  .site-subtitle{
-  font-style: italic;
 
-  margin: 20px;
+  .site-title{
+    color: white;
+    font-size: 4em;
+    font-family: 'Poller One', cursive;
+  }
+
+  .site-subtitle{
+  color: rgb(0, 41, 177);
+  font-style: italic;
+  font-family: 'Black Ops One', cursive;
   border: 5px solid  #ffffff;
   padding: 10px;
+  line-height: 1.8em;
   
   box-shadow: 0px 0px 40px 15px #FFFFFF;
-
 }
+.portifolio{
+  padding: 2em;
+}
+
+.portifolio h2 {
+  color: red;
+  font-family: 'Abril Fatface', cursive;
+  margin-bottom: 1.5em;
+  font-size: 1.9em;
+}
+
+.portifolio .grid{
+  display: grid;
+  gap: 1.4em;
+  grid-template-columns: 300px 300px;
+}
+
+.portifolio figure{
+  text-align: center;
+}
+
+.img-portifolio{
+    height: 200px;
+    width: 300px;
+}
+
+/* fontes usadas
+font-family: 'Abril Fatface', cursive;
+font-family: 'Black Ops One', cursive;
+font-family: 'Poller One', cursive;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Yellowtail', cursive; */
