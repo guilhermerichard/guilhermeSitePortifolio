@@ -1,9 +1,10 @@
 body {
-    background-image:url('https://images.unsplash.com/photo-1559628376-f3fe5f782a2e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb');
-    background-size: auto 100vh;
+    background-image:url('https://s1.1zoom.me/b8579/585/Maldives_Tropics_Sea_Sky_Bungalow_539484_1366x768.jpg');
+    background-size: auto auto;
     font-family: Arial;
     height: 100vh;
-   }
+    width: 100wh;
+}
   
   .menu
   {
@@ -27,7 +28,7 @@ body {
   
   .site-subtitle,
   .site-title{
-    color: red;
+    color: white;
     text-align: center;
   }
   .site-subtitle{
