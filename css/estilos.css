@@ -97,6 +97,7 @@ header{
 }
 .portifolio{
   padding: 2em;
+  height: 100vh;
 }
 
 .portifolio h2 {
@@ -108,9 +109,23 @@ header{
 
 .portifolio .grid{
   display: grid;
-  gap: 1.4em;
-  grid-template-columns: 300px 300px;
+  gap: 2em;
 }
+
+  @media(min-width: 560px){
+    .portifolio .grid{
+      grid-template-columns: 300px 300px;
+    }
+  }
+
+  @media(min-width: 880px){
+    .portifolio .grid{
+      grid-template-columns: 300px 300px 300px;
+      align-content:  center;
+      justify-content: center;
+      height: calc(100vh- 8em - 48px);
+    }
+  }
 
 .portifolio figure{
   text-align: center;
@@ -119,7 +134,11 @@ header{
 .img-portifolio{
     height: 200px;
     width: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5%;
 }
+
 
 /* fontes usadas
 font-family: 'Abril Fatface', cursive;
